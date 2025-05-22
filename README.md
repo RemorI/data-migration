@@ -40,4 +40,8 @@ Al hacer un análisis más profundo en estos temas, se puede hablar de las mejor
     - Asegurar la calidad de los datos, es muy necesario para que a la hora de realizar la migración, no se envíen datos con errores, incompletos o directamente equivocados a la nueba bbdd
     - Entender la complejidad de los datos, el análisis de la base de datos es fundamental para poder una mejor planeación y preparación a la hora de la migración, ya que esto permite conocer más a fondo cómo es el comportamiento que se debe replicar y no solo la forma
     - Mitigación de riesgos, al conocer la fuente de los datos se pueden evitar riesgos más allá de los datos dentro de la fuente, sino también del exterior, las dependencias e independencias de los datos que van a tener que volver a ser conectadas o asegurarse de que no estén conectadas.
-2. Data backup, 
+2. Data backup, para asegurar la integridad de los datos es necesario que siempre haya un backup de los datos y sobre todo antes de cada cambio en caso de cometer errores. Esto genera mayor seguridad al trabajar con estos datos porque nunca se va a perder la integridad de los mismos, en caso de que los datos transferidos se hayan corrompido o no se movieran de la forma esperada aún así se mantiene un backup con los datos fuente, además de la integridad también evitamos un principal problema que es la pérdida de datos.
+    - Asegurar la integridad de los datos, mantiene los datos íntegros y seguros luego de la migración para salvaguardar de pérdidas o corrupción
+    - Mitigador de riesgos, se evitan muchos riesgos al tener backup ya que siempre se puede volver un paso atrás asegurado
+    - Continuidad del negocio, esto también ayuda la negocio porque estos datos van a quedar guardados en el sistema y van a poder ser consultados cuando sea necesario
+3. 
