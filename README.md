@@ -1,7 +1,8 @@
 # Data migration
 Es importante entender que los beneficios que vienen con el uso del almacenamiento en la nube son la viabilidad, latencia, la auto orquestación, manejar coneccionse complicadas y escalar el tamaño, además de muchas cosas más pero estos suelen ser los principales problemas con los que hay que lidiar con un storage on-premise. 
 Primeramente tenemos la relocalización de aplicaciones a una máquina virtual dentro de la nube, a través de lift-and-shift.
-
+Pero generalmente hay más complejos teniendo que realizar re-estructuraciones en la arquitectura de las data stores.<br>
+Cuando se realiza una migraciones de datos no hay que perder de vista la **seguridad**, **cumplimiento**, **disponibilidad** e **integridad**. Requiere un esfuerzo coordinado entre bases de datos, desarrollo de aplicaciones, data, DevOps y equipo de infraestructura.
 
 ## Lift and shift
 *Lift-and-shift*, es una estrategia de migración de aplicaciones que primeramente los lleva offline antes de llevarlo a la nube, y una vez subido este método puede hacer uso de una estructura tipo servicio (IaaS), plataforma como servicio (Paas) o software como servicio (SaaS).
