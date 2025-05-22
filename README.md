@@ -34,3 +34,10 @@ Es esencial que en cualquier transferencia de datos se pueda mantener cuidado lo
 3. Data migration assessment
 4. Cleansing data
 5. Migration tools
+
+Al hacer un análisis más profundo en estos temas, se puede hablar de las mejores y más básicas prácticas que jamás pueden faltar sin importar qué en la migración de datos, ya sea on-premise to cloud o cloud to cloud.
+1. Antes de empezar a pensar en la migración de los datos, es importante conocer los metadatos de la bbdd, además de conocer los propósitos para la que está armada ya que esto va a hablar muchísimo de su estructura y cómo se tiende a utilizar para poder conseguir la mejor eficiencia.
+    - Asegurar la calidad de los datos, es muy necesario para que a la hora de realizar la migración, no se envíen datos con errores, incompletos o directamente equivocados a la nueba bbdd
+    - Entender la complejidad de los datos, el análisis de la base de datos es fundamental para poder una mejor planeación y preparación a la hora de la migración, ya que esto permite conocer más a fondo cómo es el comportamiento que se debe replicar y no solo la forma
+    - Mitigación de riesgos, al conocer la fuente de los datos se pueden evitar riesgos más allá de los datos dentro de la fuente, sino también del exterior, las dependencias e independencias de los datos que van a tener que volver a ser conectadas o asegurarse de que no estén conectadas.
+2. Data backup, 
