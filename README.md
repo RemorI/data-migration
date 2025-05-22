@@ -44,4 +44,8 @@ Al hacer un análisis más profundo en estos temas, se puede hablar de las mejor
     - Asegurar la integridad de los datos, mantiene los datos íntegros y seguros luego de la migración para salvaguardar de pérdidas o corrupción
     - Mitigador de riesgos, se evitan muchos riesgos al tener backup ya que siempre se puede volver un paso atrás asegurado
     - Continuidad del negocio, esto también ayuda la negocio porque estos datos van a quedar guardados en el sistema y van a poder ser consultados cuando sea necesario
-3. 
+3. Evaluación de la migración de datos, hay que hacer un buen y práctico planteamiento de cómo va a ser la mejor forma de migrar estos datos conociendo la metadata de la bbdd fuente, a dónde se enviarán, qué dependencias tiene y cuáles necesita, qué tipo de trabajo o aplicación la utilizará y cómo. Son muchas cosas a tener en cuenta que permiten elegir la mejor opción a la otra de la migración, además al conocer esta información también podemos evitar futuros problemas, evitar mucho tiempo de caída y poder llevar a cabo este plan con mayor rapidez al conocer la mayoría de contratiempos.
+    - Identificador de riesgos, ayuda a conocer potenciales riesgos y complicaciones a la hora de migrar los datos, permitiendo que la organización mitigue de forma temprana estos errores
+    - Estimación de costos, al conocer la metadata de la bbdd y cuál va a ser la nueva bbdd donde se va a almacenar, se puede realizar estimaciones en costos para un correcto previo análisis de las opciones a considerar
+    - Mapeado de dependencias, al tener conocimiento de las dependencias estas pueden ser preparadas con anterioridad para que al momento de realizar la migración, toda la información se mantenga actualizada o funcionando como se espera al conocer cuáles son sus dependencias
+4. Perfilación y análisis de datos, 
