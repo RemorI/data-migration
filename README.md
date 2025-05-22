@@ -18,3 +18,8 @@ Cuando se realiza una migraciones de datos no hay que perder de vista la **segur
 *Consideraciones para su utilización*: Hay una diferencia considerable entre shifting data y transfering data, los datos pueden ser shifted de tu sistema a la nube pero va a necesitar reengineering antes de poder ser usada.<br>
 Los datos puede ser procesados y movidos por diferentes localizaciones antes de llegar al destino, y es sumamente necesario saber dónde está guardada y que se está guardando esa información luego de cada proceso.<br>
 También es necesario saber que los datos puede ser vulnerables en todo el transito y procesamiento, así que hay que asegurar las medidas de seguridad previamente.
+
+## More complex Data Migration
+Al tener que trabajar con migraciones de datos más complejas, empezamos a tener que realizar muchas más correcciones en el sistema para que todo pueda seguir funcionando con normalidad. Primero para asegurar que esté integrado de la misma forma que en la version anterior y que todo funciona de forma perfecta, hay que asegurar principales mantenimientos y cuidados a tener en cuenta para que los datos no se vean perjudicados.
+1. Seguridad y cumplimiento, los datos se tienen que mantener seguros y mantener un cumplimiento regulatorio y con políticas internas en cada estapa de la migración.
+2. Disponibilidad del sistema, es muy relevante saber el tiempo en el que va a estar dado de baja el sistema por temas de la migración y cómo va a ser el nuevo horario. 
