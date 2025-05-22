@@ -24,4 +24,13 @@ Al tener que trabajar con migraciones de datos más complejas, empezamos a tener
 1. Seguridad y cumplimiento, los datos se tienen que mantener seguros y mantener un cumplimiento regulatorio y con políticas internas en cada estapa de la migración.
 2. Disponibilidad del sistema, es muy relevante saber el tiempo en el que va a estar dado de baja el sistema por temas de la migración y cómo va a ser el nuevo horario. Pero generalmente por el tipo de migración suele no haber interrupción en la disponibilidad ya que se mantiene la base mientras se prepara la migración en otro sitio diferente. También el nuevo sistema se puede probar en solo una pequeña población para que funcionen como testers del funcionamiento de la nueva bbdd. Aún así se debe asegurar **mínimo** tiempo de caída.
 3. Data loss, es muy importante evitar la pérdida de datos durante el período de migración, puede suceder que se escriba es un lugar y otro no o que simplemente no se esté escribiendo en ninguno.
-4. Compatibilidad, para el correcto funcionamiento del sistema se debe asegurar que se mantenga la misma compatibilidad e integración con el sistema anterior a ser migrado. Eso se refiere tanto a la conectividad con aplicaciones, otras bases de datos e incluso integraciones específicas con otras pipelines.
+4. Compatibilidad, para el correcto funcionamiento del sistema se debe asegurar que se mantenga la misma compatibilidad e integración con el sistema anterior a ser migrado. Eso se refiere tanto a la conectividad con aplicaciones, otras bases de datos e incluso integraciones específicas con otras pipelines
+5. Sobrecoste, es importante elegir la nueva bbdd o almacenamiento teniendo en cuentas las previas necesidades de la bbdd anterior porque sino podemos pasar problemas de costos por el mantenimiento de una bbdd demasiado grande o demasiado pequeña para realmente lo necesario, además de tener en cuenta los costos de ampliación y escalado. Además de que la transferencia de datos también tienen un costo, no solo el mantenimiento de la bbdd.
+
+Por eso los principales problemas con los que hay que lidiar son, el riesgo de pérdida de datos, los tiempos de caída y que los datos tengan integridad y precisión. <br>
+Es esencial que en cualquier transferencia de datos se pueda mantener cuidado lo siguiente:
+1. Data backup
+2. Data profiling and analysis
+3. Data migration assessment
+4. Cleansing data
+5. Migration tools
