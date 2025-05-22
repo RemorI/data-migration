@@ -1,5 +1,5 @@
 # Data migration
-
+Es importante entender que los beneficios que vienen con el uso del almacenamiento en la nube son la viabilidad, latencia, la auto orquestación, manejar coneccionse complicadas y escalar el tamaño, además de muchas cosas más pero estos suelen ser los principales problemas con los que hay que lidiar con un storage on-premise. 
 Primeramente tenemos la relocalización de aplicaciones a una máquina virtual dentro de la nube, a través de lift-and-shift.
 
 
@@ -15,4 +15,5 @@ Primeramente tenemos la relocalización de aplicaciones a una máquina virtual d
 3. Y una vez que esa migración se hizo se puede mover los demás trozos de data con normalidad, pero de todas formas debe ser suave y lento.
 
 *Consideraciones para su utilización*: Hay una diferencia considerable entre shifting data y transfering data, los datos pueden ser shifted de tu sistema a la nube pero va a necesitar reengineering antes de poder ser usada.<br>
-Los datos puede ser procesados y movidos por diferentes localizaciones antes de llegar al destino, y es sumamente necesario saber dónde está guardada y que se está guardando esa información luego de cada proceso.
+Los datos puede ser procesados y movidos por diferentes localizaciones antes de llegar al destino, y es sumamente necesario saber dónde está guardada y que se está guardando esa información luego de cada proceso.<br>
+También es necesario saber que los datos puede ser vulnerables en todo el transito y procesamiento, así que hay que asegurar las medidas de seguridad previamente.
