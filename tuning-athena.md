@@ -16,3 +16,6 @@ Con bucketing se refiere a separar tablas de datos basada en los datos de una ú
 > CREATE TABLE CLUSTERED BY (<bucketed columns>) INTO <number of buckets> BUCKETS
 
 ## Compresión
+Cuanto más pequeño es el tamaño del archivo (MB,GB,TB) más rápido es el análisis en Amazon S3. Athena puede soportar una variedad de formatos comprimidos como gzip, Snappy, zstd, pero hay una gran lista.<br>
+El lado negativo es que la mayoría de formatos comprimidos no puede ser dividido así que se terminará leyendo entero, por eso tiene que haber un equilibrio entre cantidad de datos y el tamaño del archivo. Parquet y OCR pueden ser divididos porque la forma en que se comprime es en secciones y contiene la metadata para saber dónde ubica todo lo buscado.<br>
+El formato **gzip** tiene buenos ratios de compresión y un largo soporte a través de otras herramientas. El **zstd** es relativamente nuevo, con un buen balance entre compresión y rendimiento. El **bzip2** y **LZO** son formatos dividibles, pero no son recomendables si se busca comprensión y compatibilidad.
