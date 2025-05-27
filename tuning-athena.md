@@ -14,3 +14,5 @@ Pero realmente el particionamiento puede ser en base a varias especificaciones, 
 ## Bucket
 Con bucketing se refiere a separar tablas de datos basada en los datos de una única columna, esto hace que los mismos datos estén en el mismo archivo, esto es muy relevante realizarlo cuando los datos de una columna sean tan importantes. En Athena se puede especificar la apertura de estos buckets además de que se podrán crear desde Athena como CTAS.
 > CREATE TABLE CLUSTERED BY (<bucketed columns>) INTO <number of buckets> BUCKETS
+
+## Compresión
